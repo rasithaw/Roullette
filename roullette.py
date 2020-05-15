@@ -40,4 +40,5 @@ def MartingaleRouletteStrategySim(StartingPot,StartingBet,WinningCap,BettedNumbe
     FinalWin = Pot - StartingPot
     return [FinalWin,Round]
 
-print(MartingaleRouletteStrategySim(StartingPot,StartingBet,WinningCap,EvenBetNumbers,NumOfTries))
+Result = MartingaleRouletteStrategySim(StartingPot,StartingBet,WinningCap,EvenBetNumbers,NumOfTries)
+print('You won $' + str(Result[0])+ ' in ' + str(Result[1]) + ' Rounds')
